@@ -1,6 +1,10 @@
 $(() => {
 
-  $.get('http://rest.learncode.academy/api/jsj2018/songs/')
+  $.ajax({
+    type: 'GET',
+    url:'http://rest.learncode.academy/api/jsj2018/songs/',
+    headers: {  'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, PUT ,DELETE' }
+  })
     .done((res) => res.forEach(s => $('#songList').append(createSong(s))))
 
   $('#songForm').submit((e) => {
