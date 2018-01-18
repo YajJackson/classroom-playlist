@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Songs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- nav -->
+  <nav id='navbar'>
+    <ul class="nav justify-content-center nav-pills nav-fill">
+      <li class="nav-item">
+        <p class="nav-item nav-link active">Class Playlist</p>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- content -->
+  <div class="container">
+    <div class="row" id='rowOne'>
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <form id='songForm'>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <input type="text" class="form-control" id="artist" placeholder="Artist" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <input type="text" class="form-control" id="title" placeholder="Song" required>
+              </div>
+            </div>
+          </div>          
+          <div class="form-group">
+            <input type="url" class="form-control" id="url" placeholder="Song Url" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block no-radius">Submit</button>
+        </form> 
+      </div>
+    </div>
+    <div class="row" id="rowTwo">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3>Songs</h3>
+            <ul class="list-group no-radius" id='songList'>
+
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

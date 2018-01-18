@@ -1,0 +1,24 @@
+#navbar {
+  margin-bottom: 5%;
+}
+
+#rowOne {
+  margin-bottom: 5%;
+}
+
+.input-group {
+  margin-bottom: 5px;
+}
+
+.no-radius {
+  border-radius: 0px;
+}
+
+a.form-control {
+  border: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
