@@ -2,7 +2,7 @@ $(() => {
 
   $.ajax({
     type: 'GET',
-    url:'http://rest.learncode.academy/api/jsj2018/songs/',
+    url:'https://rest.learncode.academy/api/jsj2018/songs/',
     headers: {  'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, PUT ,DELETE' }
   })
     .done((res) => res.forEach(s => $('#songList').append(createSong(s))))
@@ -25,7 +25,7 @@ $(() => {
     let span = $('<span></span>').addClass('input-group input-group-lg').attr({'id': song.id})
     let link = $(`<a>${song.artist} - ${song.title}</a>`).addClass('form-control').attr({'href': song.url})
     let div = $('<div></div>').addClass('input-group-append')
-    let button = $('<button>Search</button>').addClass('btn btn-danger btn-sm delete-button')
+    let button = $('<button>Remove</button>').addClass('btn btn-danger btn-sm delete-button')
 
     return span.append(link, div.append(button))
   }
